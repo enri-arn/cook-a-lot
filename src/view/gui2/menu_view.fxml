@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<!--@author Arnaudo Enrico, Bonino Samuele, Burdisso Enrico -->
+<AnchorPane fx:id="menuMainPane"
+            maxHeight="1.7976931348623157E308"
+            maxWidth="1.7976931348623157E308"
+            prefHeight="730.0"
+            prefWidth="950.0"
+            style="-fx-background-color: #FFFFFF;"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.gui_controller.MenuViewController">
+    <Label fx:id="selectedShiftLabel"
+           alignment="CENTER"
+           layoutX="50.0"
+           layoutY="18.0"
+           prefHeight="29.0"
+           prefWidth="850.0"
+           text="Turno 1 "
+           textAlignment="CENTER"
+           AnchorPane.leftAnchor="50.0"
+           AnchorPane.rightAnchor="50.0"
+           AnchorPane.topAnchor="15.0">
+        <font>
+            <Font name="Trebuchet MS"
+                  size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="menuTitleLabel"
+           alignment="CENTER"
+           layoutX="39.0"
+           layoutY="48.0"
+           maxHeight="1.7976931348623157E308"
+           maxWidth="1.7976931348623157E308"
+           prefHeight="25.0"
+           prefWidth="900.0"
+           text="Titolo del menù del turno 1"
+           textAlignment="CENTER"
+           AnchorPane.leftAnchor="25.0"
+           AnchorPane.rightAnchor="25.0"
+           AnchorPane.topAnchor="55.0">
+        <font>
+            <Font name="Trebuchet MS"
+                  size="20.0"/>
+        </font>
+    </Label>
+    <ImageView fx:id="goBackArrow"
+               blendMode="SRC_ATOP"
+               fitHeight="24.0"
+               fitWidth="24.0"
+               layoutX="24.0"
+               layoutY="24.0"
+               onMouseClicked="#goBack"
+               pickOnBounds="true"
+               preserveRatio="true"
+               AnchorPane.leftAnchor="15.0"
+               AnchorPane.topAnchor="20.0">
+        <Image url="@../image/arrow-left.png"/>
+    </ImageView>
+    <ScrollPane fitToHeight="true"
+                fitToWidth="true"
+                hbarPolicy="NEVER"
+                layoutX="375.0"
+                layoutY="115.0"
+                maxHeight="1.7976931348623157E308"
+                maxWidth="1.7976931348623157E308"
+                prefHeight="510.0"
+                prefWidth="930.0"
+                style="-fx-background-color: #FFFFFF;"
+                vbarPolicy="NEVER"
+                AnchorPane.bottomAnchor="100.0"
+                AnchorPane.leftAnchor="10.0"
+                AnchorPane.rightAnchor="10.0"
+                AnchorPane.topAnchor="120.0">
+        <AnchorPane fx:id="sectionMenuPane"
+                    maxHeight="1.7976931348623157E308"
+                    maxWidth="1.7976931348623157E308"
+                    prefHeight="510.0"
+                    prefWidth="930.0"
+                    style="-fx-background-color: #FFFFFF;"/>
+    </ScrollPane>
+    <Button fx:id="endAssignementBtn"
+            layoutX="10.0"
+            layoutY="10.0"
+            mnemonicParsing="false"
+            onAction="#endAssignement"
+            prefHeight="40.0"
+            prefWidth="110.0"
+            style="-fx-background-color: #ffc107;"
+            text="SALVA"
+            textFill="WHITE"
+            AnchorPane.bottomAnchor="30.0"
+            AnchorPane.rightAnchor="30.0">
+        <effect>
+            <DropShadow blurType="TWO_PASS_BOX"
+                        color="#00000066"
+                        height="10.0"
+                        offsetX="1.0"
+                        offsetY="1.0"
+                        radius="4.5"
+                        width="10.0"/>
+        </effect>
+        <font>
+            <Font name="Trebuchet MS"
+                  size="18.0"/>
+        </font>
+    </Button>
+    <Button fx:id="exitAssignementBtn"
+            layoutX="574.0"
+            layoutY="660.0"
+            mnemonicParsing="false"
+            onAction="#exitAssignement"
+            prefHeight="40.0"
+            prefWidth="110.0"
+            style="-fx-background-color: #F44336;"
+            text="ANNULLA"
+            textFill="WHITE"
+            AnchorPane.bottomAnchor="30.0"
+            AnchorPane.rightAnchor="150.0">
+        <effect>
+            <DropShadow blurType="TWO_PASS_BOX"
+                        color="#00000066"
+                        height="10.0"
+                        offsetX="1.0"
+                        offsetY="1.0"
+                        radius="4.5"
+                        width="10.0"/>
+        </effect>
+        <font>
+            <Font name="Trebuchet MS"
+                  size="18.0"/>
+        </font>
+    </Button>
+</AnchorPane>

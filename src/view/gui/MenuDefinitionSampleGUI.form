@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.gui.MenuDefinitionSampleGUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="731" height="531"/>
+    </constraints>
+    <properties>
+      <opaque value="false"/>
+      <preferredSize width="800" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="f20ce" binding="menuSelectionPanel" layout-manager="BorderLayout" hgap="5" vgap="5">
+        <constraints>
+          <card name="menuSelection"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="e7957" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7e210" class="javax.swing.JButton" binding="createMenuButton">
+                <constraints/>
+                <properties>
+                  <actionCommand value="CreaMenu"/>
+                  <label value="Crea"/>
+                  <text value="Crea"/>
+                </properties>
+              </component>
+              <component id="617a6" class="javax.swing.JButton" binding="copyMenuButton">
+                <constraints/>
+                <properties>
+                  <actionCommand value="CopiaMenu"/>
+                  <label value="Copia"/>
+                  <text value="Copia"/>
+                </properties>
+              </component>
+              <component id="3541f" class="javax.swing.JButton" binding="editMenuButton">
+                <constraints/>
+                <properties>
+                  <actionCommand value="ModificaMenu"/>
+                  <label value="Modifica"/>
+                  <text value="Modifica"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="eabe6" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="empty">
+              <size top="5" left="5" bottom="5" right="5"/>
+            </border>
+            <children>
+              <scrollpane id="a99d2" binding="menuScroll">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="efb08" class="javax.swing.JList" binding="menuList">
+                    <constraints/>
+                    <properties>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="4ee55" binding="menuDetailsPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="menuDetails"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="3e84b" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="empty">
+              <size top="3" left="3" bottom="3" right="3"/>
+            </border>
+            <children>
+              <component id="3929c" class="javax.swing.JLabel" binding="menuTitle">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <font size="18"/>
+                  <horizontalAlignment value="2"/>
+                  <text value="Menu Title "/>
+                </properties>
+              </component>
+              <grid id="4a88b" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+                <constraints border-constraint="East"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="2d067" class="javax.swing.JButton" binding="rinominaMenuButton">
+                    <constraints/>
+                    <properties>
+                      <text value="Rinomina..."/>
+                    </properties>
+                  </component>
+                  <component id="a29e3" class="javax.swing.JButton" binding="eliminaMenuButton">
+                    <constraints/>
+                    <properties>
+                      <text value="Elimina"/>
+                    </properties>
+                  </component>
+                  <component id="e552" class="javax.swing.JButton" binding="completoButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Completo"/>
+                    </properties>
+                  </component>
+                  <component id="edf9b" class="javax.swing.JButton" binding="esciButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Esci"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="d4ad3" layout-manager="BorderLayout" hgap="20" vgap="3">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="bevel-lowered"/>
+            <children>
+              <grid id="20b03" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="West"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="cbfc3" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <text value="Sezioni del menù:"/>
+                    </properties>
+                  </component>
+                  <scrollpane id="cbb5e">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="a556a" class="javax.swing.JList" binding="sectionsList">
+                        <constraints/>
+                        <properties>
+                          <selectionMode value="0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <grid id="343ce" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints border-constraint="South"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="b81df" class="javax.swing.JButton" binding="aggiungiSezButton">
+                        <constraints/>
+                        <properties>
+                          <text value="Aggiungi..."/>
+                        </properties>
+                      </component>
+                      <component id="d4aa1" class="javax.swing.JButton" binding="eliminaSezButton">
+                        <constraints/>
+                        <properties>
+                          <text value="Elimina"/>
+                        </properties>
+                      </component>
+                      <component id="9937" class="javax.swing.JButton" binding="rinominaSezButton">
+                        <constraints/>
+                        <properties>
+                          <text value="Rinomina..."/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="6c64f" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="4e074" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <text value="Voci nella sezione:"/>
+                    </properties>
+                  </component>
+                  <scrollpane id="804a7">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="4afbf" class="javax.swing.JList" binding="itemsList">
+                        <constraints/>
+                        <properties>
+                          <selectionMode value="0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <grid id="37749" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints border-constraint="South"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="ffce4" class="javax.swing.JButton" binding="aggiungiVoceButton">
+                        <constraints/>
+                        <properties>
+                          <text value="Aggiungi..."/>
+                        </properties>
+                      </component>
+                      <component id="65884" class="javax.swing.JButton" binding="eliminaVoceButton">
+                        <constraints/>
+                        <properties>
+                          <text value="Elimina"/>
+                        </properties>
+                      </component>
+                      <component id="1260b" class="javax.swing.JButton" binding="modificaVoceButton">
+                        <constraints/>
+                        <properties>
+                          <text value="Modifica.."/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

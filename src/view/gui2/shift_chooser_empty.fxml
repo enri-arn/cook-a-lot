@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="1.7976931348623157E308"
+            maxWidth="1.7976931348623157E308"
+            prefHeight="730.0"
+            prefWidth="950.0"
+            style="-fx-background-color: #FFFFFF;"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.gui_controller.ShiftChooserEmptyController">
+    <children>
+        <Label alignment="CENTER"
+               layoutX="315.0"
+               layoutY="355.0"
+               text="Non ci sono turni nel giorno selezionato"
+               textAlignment="CENTER"
+               wrapText="true"
+               AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0"
+               AnchorPane.rightAnchor="0.0"
+               AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="Trebuchet MS"
+                      size="18.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="goBackArrow"
+                   blendMode="SRC_ATOP"
+                   fitHeight="24.0"
+                   fitWidth="24.0"
+                   layoutX="24.0"
+                   layoutY="24.0"
+                   onMouseClicked="#goBack"
+                   pickOnBounds="true"
+                   preserveRatio="true"
+                   AnchorPane.leftAnchor="15.0"
+                   AnchorPane.topAnchor="20.0">
+            <image>
+                <Image url="@../image/arrow-left.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

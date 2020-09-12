@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<!--@author Arnaudo Enrico, Bonino Samuele, Burdisso Enrico -->
+<AnchorPane fx:id="snakbarPane"
+            prefHeight="60.0"
+            prefWidth="290.0"
+            style="-fx-background-color: #424242;"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.gui_controller.SnakbarController">
+    <effect>
+        <DropShadow color="#00000066"
+                    height="20.0"
+                    offsetX="1.0"
+                    offsetY="1.0"
+                    radius="9.5"
+                    width="20.0"/>
+    </effect>
+    <Label fx:id="defaultLabelText"
+           text="0 assegnamenti salvati"
+           textFill="WHITE"
+           AnchorPane.bottomAnchor="2.0"
+           AnchorPane.leftAnchor="40.0"
+           AnchorPane.rightAnchor="2.0"
+           AnchorPane.topAnchor="2.0">
+        <font>
+            <Font name="Trebuchet MS"
+                  size="16.0"/>
+        </font>
+    </Label>
+    <ImageView fitHeight="24.0"
+               fitWidth="24.0"
+               layoutX="10.0"
+               layoutY="10.0"
+               pickOnBounds="true"
+               preserveRatio="true"
+               AnchorPane.bottomAnchor="18.0"
+               AnchorPane.leftAnchor="10.0"
+               AnchorPane.topAnchor="18.0">
+        <Image url="@../image/alert-info.png"/>
+    </ImageView>
+</AnchorPane>
